@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aaec0a80a91d50d20790e5c465f6e917c"><param name="Name" value="_alwaysOpen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa8ba4cc993e32b97c3e4290aff99e5a4"><param name="Name" value="_canRead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a268f282ad8f4ec3a3efc9d12849d1485"><param name="Name" value="_canWrite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a74a408ca5d876ac5d69f2791129a02d0"><param name="Name" value="_debug"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a85372640c7abe0444974f4f58946f548"><param name="Name" value="_sec"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#acab6b1266e81165e99ce7587ae94b839"><param name="Name" value="_timeout"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#adeada13aa198cb343e04867ad35f15ec"><param name="Name" value="_type"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a1f29cfb61ca5cdc8ce6e9cf1b1ffed2d"><param name="Name" value="_usec"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a159c36f0bf94aa711a2d5273b68a376e"><param name="Name" value="AsTimespec"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a69e8323e2b6d9a02a4697fb4b78f19b9"><param name="Name" value="AsTimeval"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a88961d230176fbe1b7959ad2fd69bc6d"><param name="Name" value="BytesAvailable"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a88961d230176fbe1b7959ad2fd69bc6d"><param name="Name" value="flexiport::LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#aacc1da2259c22834189beb42ecc7bbc4"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a7c2693df217b21da90d0fb13816035ed"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a7614f5e9881e75e24d5c40d8c9f1af6c"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a8200624c16fcb8f48cbfdb0c3ab300a0"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#aa2ff5ec42124404cac21ad5e99ff031f"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a276fbd4eb3c2f5f8b9bdd1dd94f191e4"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a6dbeaab9198d9bc425fb5fb677f83c25"><param name="Name" value="BytesAvailableWait"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a6dbeaab9198d9bc425fb5fb677f83c25"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a8b63015bc61759f1ad334c58e0f81b59"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a2967c49bd23f95e7f325212c7947acd0"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a79b0737a60ad398d814f14dd2f6b74c6"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#ab36d65613ffd037a3e685bb3bf28cdf6"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a59b974d567e59b93ed44e65c85d7c6fa"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a4789e79b0f0e5f393c0dd2a08a00ffc0"><param name="Name" value="CanRead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a0b97b8b3e58ad487dabb491c353faf0f"><param name="Name" value="CanWrite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ac0d52a8c99418c724f2492e88dc2c83f"><param name="Name" value="CheckPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#aa201747dae596a24895513c4933c43b3"><param name="Name" value="CheckWrite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a34a749882caf5f1ef2022b05adcb1e9e"><param name="Name" value="Close"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a34a749882caf5f1ef2022b05adcb1e9e"><param name="Name" value="flexiport::LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#add82ac2af0872325613b3d8d5c91e8c3"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a7e7651188ae084c5cf17ae97ca328d16"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ae98f3d3cd64267e60cd01377e7f07b67"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a288718bdb3eec56eda141a39f8ab5582"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a3d0c6c129794f45a1c3dc2895bef3312"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a8e984094237c4c1c495d7630a41ffb1b"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceflexiport.html#aa3d58772ad935e45ee1c20da8af32995"><param name="Name" value="CreatePort"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceflexiport.html#aa3d58772ad935e45ee1c20da8af32995"><param name="Name" value="flexiport"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceflexiport.html#aa3d58772ad935e45ee1c20da8af32995"><param name="Name" value="flexiport.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a5d94d495af5395e602910cf98520e945"><param name="Name" value="Drain"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a5d94d495af5395e602910cf98520e945"><param name="Name" value="flexiport::LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a1a4a1a56eb1e15dfcd808b859ba20afb"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a470c6b564dcbbb0d26982e3f362ace43"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a957408ef7418b31d457b74a9ff32d00d"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a97fe18bd3848379cb4226ea5c4ddd0a1"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a79b943f36c973d509d8c28042117ad6b"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#ae50f7894e5a6d462292f35da64e9590c"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceflexiport.html"><param name="Name" value="flexiport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="flexiport_8h.html"><param name="Name" value="flexiport.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="flexiport_8h.html#aa3d58772ad935e45ee1c20da8af32995"><param name="Name" value="CreatePort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="flexiport_8h.html#a28f351472d5be0411c8faa08f007912a"><param name="Name" value="FLEXIPORT_EXPORT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html"><param name="Name" value="flexiport::LogFile"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a88961d230176fbe1b7959ad2fd69bc6d"><param name="Name" value="BytesAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#aa201747dae596a24895513c4933c43b3"><param name="Name" value="CheckWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a34a749882caf5f1ef2022b05adcb1e9e"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a5d94d495af5395e602910cf98520e945"><param name="Name" value="Drain"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a2fdedf9bfe91145905584e3aac8c9b1c"><param name="Name" value="Flush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#adee8da947814e960d1369205779a7031"><param name="Name" value="IsOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ad33ee2d470eaf7ed5f850f6223c53cac"><param name="Name" value="LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ac2ca8111e929e403f4739ccc92306413"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a4ed02b4b3091d83bfa5c070e62749126"><param name="Name" value="Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a3cccf0ac14c641f167a7eb0207005ee1"><param name="Name" value="ResetFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ae4b8e5fee65aabd444f941ec602584b8"><param name="Name" value="WriteRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ad07f4702b4a5f4adedbbea77976c5a75"><param name="Name" value="WriteWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a6de9970261447f5316b9e521740ec5a4"><param name="Name" value="~LogFile"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#aacc1da2259c22834189beb42ecc7bbc4"><param name="Name" value="BytesAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a6dbeaab9198d9bc425fb5fb677f83c25"><param name="Name" value="BytesAvailableWait"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#add82ac2af0872325613b3d8d5c91e8c3"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a1a4a1a56eb1e15dfcd808b859ba20afb"><param name="Name" value="Drain"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ae24a26ba57e267d8bfa00944cfc1940c"><param name="Name" value="Flush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a8568844530605b68a53dd004968249c4"><param name="Name" value="GetStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ae36a7b25c4c7c8aaa94791413692da58"><param name="Name" value="IsOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ab232fc25cfbcf18e8071aed808109c39"><param name="Name" value="LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ac9e9312be703e02b9200951c83008051"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a40dbab2df35f535153e4045d534ae576"><param name="Name" value="Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a4b16ac3c4a6b30c6921a65e550935eca"><param name="Name" value="ReadFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a7f08bae093c4aed4f65062867911a81b"><param name="Name" value="SetCanRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#aeee2cebbcdf2e1652e490c3eee407d76"><param name="Name" value="SetCanWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ae8a1d9f72e89a8e76ac00916d39f8997"><param name="Name" value="SetTimeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ac8a1af3fb3b04d81383f3f08127b5b68"><param name="Name" value="Write"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a5e22b342cb366ff1d98c2b4f74eac6ae"><param name="Name" value="~LogReaderPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a7c2693df217b21da90d0fb13816035ed"><param name="Name" value="BytesAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a8b63015bc61759f1ad334c58e0f81b59"><param name="Name" value="BytesAvailableWait"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a7e7651188ae084c5cf17ae97ca328d16"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a470c6b564dcbbb0d26982e3f362ace43"><param name="Name" value="Drain"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a7bde2c7bc2fc3d56bae4c4db9f9a1b03"><param name="Name" value="Flush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#abac6d50311d644bc2d6155222ff9d1be"><param name="Name" value="GetStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a5c17437c44b2314dd3105d5833ed3d96"><param name="Name" value="IsOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#afa2ab4280c86d08d8e66af686fa68821"><param name="Name" value="LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a1937759696b73b59d86cc310d38967d0"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#aaa41ffd589f2d0c1c76eace818582064"><param name="Name" value="Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#aec9d55571ed5f3d45f70df0803cd4c00"><param name="Name" value="ReadFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a38c2d4ff01768ce3962d43179e084d74"><param name="Name" value="SetCanRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#ad210c9fd39b9c617384f45500e3a8fb8"><param name="Name" value="SetCanWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a1c0c20bcb6cbe05be56537bca28f6d0d"><param name="Name" value="SetTimeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#af89b6e34ababdba8ee6467f75c7eb334"><param name="Name" value="Skip"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#ab888d664e96890df108d405b93628555"><param name="Name" value="SkipUntil"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#ac22f166438c8a60aaae588a622aaaae0"><param name="Name" value="Write"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a628ea93d1cdfb82cc7794c29676fc443"><param name="Name" value="~LogWriterPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html"><param name="Name" value="flexiport::Port"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aaec0a80a91d50d20790e5c465f6e917c"><param name="Name" value="_alwaysOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa8ba4cc993e32b97c3e4290aff99e5a4"><param name="Name" value="_canRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a268f282ad8f4ec3a3efc9d12849d1485"><param name="Name" value="_canWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a74a408ca5d876ac5d69f2791129a02d0"><param name="Name" value="_debug"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#acab6b1266e81165e99ce7587ae94b839"><param name="Name" value="_timeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#adeada13aa198cb343e04867ad35f15ec"><param name="Name" value="_type"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a7614f5e9881e75e24d5c40d8c9f1af6c"><param name="Name" value="BytesAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a2967c49bd23f95e7f325212c7947acd0"><param name="Name" value="BytesAvailableWait"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a4789e79b0f0e5f393c0dd2a08a00ffc0"><param name="Name" value="CanRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a0b97b8b3e58ad487dabb491c353faf0f"><param name="Name" value="CanWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ac0d52a8c99418c724f2492e88dc2c83f"><param name="Name" value="CheckPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ae98f3d3cd64267e60cd01377e7f07b67"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a957408ef7418b31d457b74a9ff32d00d"><param name="Name" value="Drain"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a668e5385701ea91188701d281d1472d8"><param name="Name" value="Flush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa258404292ed68d0aa75398539accecb"><param name="Name" value="GetDebug"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a10305d725ccd4f53e872ef3316eabbcb"><param name="Name" value="GetPortType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa8f5c9d551a0a5ee3c34bf174f03e995"><param name="Name" value="GetStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a65d32c9aaebb37eaebf32c2a95f5ebeb"><param name="Name" value="GetTimeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ab3371d50dde81994f079b6ed80f42922"><param name="Name" value="IsBlocking"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ad5c7a6c8654f2f7bd6e12322207a6741"><param name="Name" value="IsOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a8c58be7e0aa0ee292ab47501520ff870"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a849ee8ac5ad1cb0c316e37f5cbe5907e"><param name="Name" value="Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a38f0c07930b4f9fe41be03eb507b6587"><param name="Name" value="ProcessOption"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa9f3db8b86a19cb55d416eb4c725a9b1"><param name="Name" value="ProcessOptions"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a7bbe4b1584b60a6eb01f59668b36f85a"><param name="Name" value="Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ac21713744e9efa715b6c2c82e6dd4f39"><param name="Name" value="ReadFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ae0dcc38444978e404896759fc6cb42ee"><param name="Name" value="ReadLine"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a9697aa2e0506b941c0ddca3fadc51fef"><param name="Name" value="ReadString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#af5ff0204f874209b5c6c799feaad51b3"><param name="Name" value="ReadStringUntil"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a4682e1bdee169c36292a98632dd15c3a"><param name="Name" value="ReadUntil"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a8e4d30f95cbd4bcef448f5a71f6839db"><param name="Name" value="SetCanRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a49216aa35eb7d0f4fead89bfc4886a49"><param name="Name" value="SetCanWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ad5d41a53a55a2d727237ad8d7e80cf1b"><param name="Name" value="SetDebug"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a6e1e0f5a8961e466ea6caa480813d710"><param name="Name" value="SetTimeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a4b20a42432670ab449bc373dcf2e5749"><param name="Name" value="Skip"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a20101fdd81e2b1e6907c12f6a373196f"><param name="Name" value="SkipUntil"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#adb4dd81fc6112c621f159e6d2fbf1cf0"><param name="Name" value="Write"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a5a0cab3b745577ad5b2ebbfd46817153"><param name="Name" value="WriteFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a6e7f4c27d4eb1d45f705e63f9b50e575"><param name="Name" value="WriteString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a5be1aec96f32fbd1d753d9f1e9a585f9"><param name="Name" value="~Port"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port_exception.html"><param name="Name" value="flexiport::PortException"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port_exception.html#a643b7b57b95398b88f831f56bf990abc"><param name="Name" value="PortException"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port_exception.html#a224ddd885f57556583c177c65d2dce9f"><param name="Name" value="what"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port_exception.html#a991be6a270387599812eddd5bc96b31d"><param name="Name" value="~PortException"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a8200624c16fcb8f48cbfdb0c3ab300a0"><param name="Name" value="BytesAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a79b0737a60ad398d814f14dd2f6b74c6"><param name="Name" value="BytesAvailableWait"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a288718bdb3eec56eda141a39f8ab5582"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a97fe18bd3848379cb4226ea5c4ddd0a1"><param name="Name" value="Drain"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a5a0fc093cab502658288fbdb2385025f"><param name="Name" value="Flush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a8ecc58360eee564e23ec279fdf006457"><param name="Name" value="GetBaudRate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a919a46a3d13f45568fc191a9d5116a1e"><param name="Name" value="GetStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#adb13327025bf85ac0a5e3f4a2fe2b1d6"><param name="Name" value="IsOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a00d69cf7139cf10a2b4f132fa99edf3a"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#aea5b5dbaa028e3111f16d73e8bebb9bd"><param name="Name" value="Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#aef912e0013bd23230b8d98d91c79d4ee"><param name="Name" value="ReadFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a1b1c4f8562ad968cb4cab93867360400"><param name="Name" value="SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a9dc22754c7da00f31a914789eb1c7c0f"><param name="Name" value="SetBaudRate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a6153938efae9a02e92ccb38db9711874"><param name="Name" value="SetCanRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a09985c4827f44ea4127ec384a8222f08"><param name="Name" value="SetCanWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#ae6f8766ed97486b8b194aa0eb89299fc"><param name="Name" value="SetTimeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a788122a2d52b2df1d7aff1e426c58761"><param name="Name" value="Write"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#aca8cb76141e8dfc5e80f5d5c7f70013c"><param name="Name" value="~SerialPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#aa2ff5ec42124404cac21ad5e99ff031f"><param name="Name" value="BytesAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#ab36d65613ffd037a3e685bb3bf28cdf6"><param name="Name" value="BytesAvailableWait"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a3d0c6c129794f45a1c3dc2895bef3312"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a79b943f36c973d509d8c28042117ad6b"><param name="Name" value="Drain"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a4447d0c7950cda94023ce7ae45744b57"><param name="Name" value="Flush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#ae1f0ca5662586fb6d3cac1de5c62f521"><param name="Name" value="GetStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a8f6aaf370f2dd08710bd4f610c68bdc3"><param name="Name" value="IsOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#ac34a0884e36f987337218d11ea2ed565"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a21a4e8d56898d8481b70c6c9713f2417"><param name="Name" value="Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a76eb4827bc6d3c245f5d05179941ab93"><param name="Name" value="ReadFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a52abfe0150e2460592367610a331ceea"><param name="Name" value="SetCanRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a370f8273d2d72f66884d6411e0d6e1b4"><param name="Name" value="SetCanWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#aa7390cfd0016ce83a285dd42d8a25d58"><param name="Name" value="SetTimeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a322d87ded8b003f09ad059e1dbc2f4fd"><param name="Name" value="TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#af6139d8477a6d82938f262c46db80734"><param name="Name" value="Write"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a92d13d1ed8a958c41fb267c807751d7a"><param name="Name" value="~TCPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html"><param name="Name" value="flexiport::Timeout"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a85372640c7abe0444974f4f58946f548"><param name="Name" value="_sec"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a1f29cfb61ca5cdc8ce6e9cf1b1ffed2d"><param name="Name" value="_usec"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a159c36f0bf94aa711a2d5273b68a376e"><param name="Name" value="AsTimespec"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a69e8323e2b6d9a02a4697fb4b78f19b9"><param name="Name" value="AsTimeval"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a6d6bdbf0f85fc5ecf2253dec19e0cbce"><param name="Name" value="FromTimespec"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a02b54020bd6052bc62ce3e6fa3686f42"><param name="Name" value="FromTimeval"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a4d41c13bffd5362d7c953a1fb3403e56"><param name="Name" value="operator="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#af152b188f619c2946c41ad09f8c782ed"><param name="Name" value="Timeout"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a276fbd4eb3c2f5f8b9bdd1dd94f191e4"><param name="Name" value="BytesAvailable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a59b974d567e59b93ed44e65c85d7c6fa"><param name="Name" value="BytesAvailableWait"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a8e984094237c4c1c495d7630a41ffb1b"><param name="Name" value="Close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#ae50f7894e5a6d462292f35da64e9590c"><param name="Name" value="Drain"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aa1565aa543d662cc5d6d0d3f49ab9011"><param name="Name" value="Flush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a2f72b44de99232e2895f888051c015fb"><param name="Name" value="GetStatus"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aa0cf22123572524670ab795d21d2c1b9"><param name="Name" value="IsOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a8cf375bb72851dfa46c54c9f43e836cf"><param name="Name" value="Open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#ad310fedf85687caf8c85366d2b2d1d0a"><param name="Name" value="Read"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a21f4c4d1592f3afc9bd149224dfa27a0"><param name="Name" value="ReadFull"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aee853804bf02d8aca9adc08fab14ee87"><param name="Name" value="ReadStringUntil"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a82296bf94266b3d4338623be3cd94139"><param name="Name" value="ReadUntil"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a042ac897f875dade46d3fefcee3383c3"><param name="Name" value="SetCanRead"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aba3eb389458b520e0875cddeda42a2e9"><param name="Name" value="SetCanWrite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a99eff94d36f76d4ebea8429928c15c0c"><param name="Name" value="SetTimeout"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a8b860b67a0c93a5bed2e5a22c2bb6dcc"><param name="Name" value="Skip"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a9b9e08ef9f76a29c2cfe81b466dc470c"><param name="Name" value="SkipUntil"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a96831921b4aa1ed024d1b50b65848c43"><param name="Name" value="UDPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#abf30f2c48bd455684b4bfc6b02005ef5"><param name="Name" value="Write"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aa643309cb4af5f2b7930f08fd9540e35"><param name="Name" value="~UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceflexiport.html"><param name="Name" value="flexiport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="flexiport_8h.html#a28f351472d5be0411c8faa08f007912a"><param name="Name" value="FLEXIPORT_EXPORT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="flexiport_8h.html#a28f351472d5be0411c8faa08f007912a"><param name="Name" value="flexiport.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="port_8h.html#a28f351472d5be0411c8faa08f007912a"><param name="Name" value="port.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="timeout_8h.html#a28f351472d5be0411c8faa08f007912a"><param name="Name" value="timeout.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a2fdedf9bfe91145905584e3aac8c9b1c"><param name="Name" value="Flush"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a2fdedf9bfe91145905584e3aac8c9b1c"><param name="Name" value="flexiport::LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ae24a26ba57e267d8bfa00944cfc1940c"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a7bde2c7bc2fc3d56bae4c4db9f9a1b03"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a668e5385701ea91188701d281d1472d8"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a5a0fc093cab502658288fbdb2385025f"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a4447d0c7950cda94023ce7ae45744b57"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aa1565aa543d662cc5d6d0d3f49ab9011"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a6d6bdbf0f85fc5ecf2253dec19e0cbce"><param name="Name" value="FromTimespec"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a02b54020bd6052bc62ce3e6fa3686f42"><param name="Name" value="FromTimeval"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a8ecc58360eee564e23ec279fdf006457"><param name="Name" value="GetBaudRate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa258404292ed68d0aa75398539accecb"><param name="Name" value="GetDebug"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a10305d725ccd4f53e872ef3316eabbcb"><param name="Name" value="GetPortType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a8568844530605b68a53dd004968249c4"><param name="Name" value="GetStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a8568844530605b68a53dd004968249c4"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#abac6d50311d644bc2d6155222ff9d1be"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa8f5c9d551a0a5ee3c34bf174f03e995"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a919a46a3d13f45568fc191a9d5116a1e"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#ae1f0ca5662586fb6d3cac1de5c62f521"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a2f72b44de99232e2895f888051c015fb"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a65d32c9aaebb37eaebf32c2a95f5ebeb"><param name="Name" value="GetTimeout"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ab3371d50dde81994f079b6ed80f42922"><param name="Name" value="IsBlocking"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#adee8da947814e960d1369205779a7031"><param name="Name" value="IsOpen"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#adee8da947814e960d1369205779a7031"><param name="Name" value="flexiport::LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ae36a7b25c4c7c8aaa94791413692da58"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a5c17437c44b2314dd3105d5833ed3d96"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ad5c7a6c8654f2f7bd6e12322207a6741"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#adb13327025bf85ac0a5e3f4a2fe2b1d6"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a8f6aaf370f2dd08710bd4f610c68bdc3"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aa0cf22123572524670ab795d21d2c1b9"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ad33ee2d470eaf7ed5f850f6223c53cac"><param name="Name" value="LogFile"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ab232fc25cfbcf18e8071aed808109c39"><param name="Name" value="LogReaderPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#afa2ab4280c86d08d8e66af686fa68821"><param name="Name" value="LogWriterPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ac2ca8111e929e403f4739ccc92306413"><param name="Name" value="Open"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ac2ca8111e929e403f4739ccc92306413"><param name="Name" value="flexiport::LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ac9e9312be703e02b9200951c83008051"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a1937759696b73b59d86cc310d38967d0"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a8c58be7e0aa0ee292ab47501520ff870"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a00d69cf7139cf10a2b4f132fa99edf3a"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#ac34a0884e36f987337218d11ea2ed565"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a8cf375bb72851dfa46c54c9f43e836cf"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#a4d41c13bffd5362d7c953a1fb3403e56"><param name="Name" value="operator="></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="port_8h.html"><param name="Name" value="port.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a849ee8ac5ad1cb0c316e37f5cbe5907e"><param name="Name" value="Port"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port_exception.html#a643b7b57b95398b88f831f56bf990abc"><param name="Name" value="PortException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a38f0c07930b4f9fe41be03eb507b6587"><param name="Name" value="ProcessOption"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#aa9f3db8b86a19cb55d416eb4c725a9b1"><param name="Name" value="ProcessOptions"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a4ed02b4b3091d83bfa5c070e62749126"><param name="Name" value="Read"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a4ed02b4b3091d83bfa5c070e62749126"><param name="Name" value="flexiport::LogFile"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a40dbab2df35f535153e4045d534ae576"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#aaa41ffd589f2d0c1c76eace818582064"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a7bbe4b1584b60a6eb01f59668b36f85a"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#aea5b5dbaa028e3111f16d73e8bebb9bd"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a21a4e8d56898d8481b70c6c9713f2417"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#ad310fedf85687caf8c85366d2b2d1d0a"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a4b16ac3c4a6b30c6921a65e550935eca"><param name="Name" value="ReadFull"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a4b16ac3c4a6b30c6921a65e550935eca"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#aec9d55571ed5f3d45f70df0803cd4c00"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ac21713744e9efa715b6c2c82e6dd4f39"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#aef912e0013bd23230b8d98d91c79d4ee"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a76eb4827bc6d3c245f5d05179941ab93"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a21f4c4d1592f3afc9bd149224dfa27a0"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ae0dcc38444978e404896759fc6cb42ee"><param name="Name" value="ReadLine"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a9697aa2e0506b941c0ddca3fadc51fef"><param name="Name" value="ReadString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#af5ff0204f874209b5c6c799feaad51b3"><param name="Name" value="ReadStringUntil"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#af5ff0204f874209b5c6c799feaad51b3"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aee853804bf02d8aca9adc08fab14ee87"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a4682e1bdee169c36292a98632dd15c3a"><param name="Name" value="ReadUntil"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a4682e1bdee169c36292a98632dd15c3a"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a82296bf94266b3d4338623be3cd94139"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a3cccf0ac14c641f167a7eb0207005ee1"><param name="Name" value="ResetFile"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a1b1c4f8562ad968cb4cab93867360400"><param name="Name" value="SerialPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a9dc22754c7da00f31a914789eb1c7c0f"><param name="Name" value="SetBaudRate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a7f08bae093c4aed4f65062867911a81b"><param name="Name" value="SetCanRead"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a7f08bae093c4aed4f65062867911a81b"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a38c2d4ff01768ce3962d43179e084d74"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a8e4d30f95cbd4bcef448f5a71f6839db"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a6153938efae9a02e92ccb38db9711874"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a52abfe0150e2460592367610a331ceea"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a042ac897f875dade46d3fefcee3383c3"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#aeee2cebbcdf2e1652e490c3eee407d76"><param name="Name" value="SetCanWrite"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#aeee2cebbcdf2e1652e490c3eee407d76"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#ad210c9fd39b9c617384f45500e3a8fb8"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a49216aa35eb7d0f4fead89bfc4886a49"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a09985c4827f44ea4127ec384a8222f08"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a370f8273d2d72f66884d6411e0d6e1b4"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aba3eb389458b520e0875cddeda42a2e9"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#ad5d41a53a55a2d727237ad8d7e80cf1b"><param name="Name" value="SetDebug"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ae8a1d9f72e89a8e76ac00916d39f8997"><param name="Name" value="SetTimeout"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ae8a1d9f72e89a8e76ac00916d39f8997"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a1c0c20bcb6cbe05be56537bca28f6d0d"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a6e1e0f5a8961e466ea6caa480813d710"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#ae6f8766ed97486b8b194aa0eb89299fc"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#aa7390cfd0016ce83a285dd42d8a25d58"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a99eff94d36f76d4ebea8429928c15c0c"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#af89b6e34ababdba8ee6467f75c7eb334"><param name="Name" value="Skip"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#af89b6e34ababdba8ee6467f75c7eb334"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a4b20a42432670ab449bc373dcf2e5749"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a8b860b67a0c93a5bed2e5a22c2bb6dcc"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#ab888d664e96890df108d405b93628555"><param name="Name" value="SkipUntil"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#ab888d664e96890df108d405b93628555"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a20101fdd81e2b1e6907c12f6a373196f"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a9b9e08ef9f76a29c2cfe81b466dc470c"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a322d87ded8b003f09ad059e1dbc2f4fd"><param name="Name" value="TCPPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="timeout_8h.html"><param name="Name" value="timeout.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_timeout.html#af152b188f619c2946c41ad09f8c782ed"><param name="Name" value="Timeout"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#a96831921b4aa1ed024d1b50b65848c43"><param name="Name" value="UDPPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port_exception.html#a224ddd885f57556583c177c65d2dce9f"><param name="Name" value="what"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ac8a1af3fb3b04d81383f3f08127b5b68"><param name="Name" value="Write"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#ac8a1af3fb3b04d81383f3f08127b5b68"><param name="Name" value="flexiport::LogReaderPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#ac22f166438c8a60aaae588a622aaaae0"><param name="Name" value="flexiport::LogWriterPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#adb4dd81fc6112c621f159e6d2fbf1cf0"><param name="Name" value="flexiport::Port"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#a788122a2d52b2df1d7aff1e426c58761"><param name="Name" value="flexiport::SerialPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#af6139d8477a6d82938f262c46db80734"><param name="Name" value="flexiport::TCPPort"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#abf30f2c48bd455684b4bfc6b02005ef5"><param name="Name" value="flexiport::UDPPort"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a5a0cab3b745577ad5b2ebbfd46817153"><param name="Name" value="WriteFull"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ae4b8e5fee65aabd444f941ec602584b8"><param name="Name" value="WriteRead"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a6e7f4c27d4eb1d45f705e63f9b50e575"><param name="Name" value="WriteString"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#ad07f4702b4a5f4adedbbea77976c5a75"><param name="Name" value="WriteWrite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_file.html#a6de9970261447f5316b9e521740ec5a4"><param name="Name" value="~LogFile"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_reader_port.html#a5e22b342cb366ff1d98c2b4f74eac6ae"><param name="Name" value="~LogReaderPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_log_writer_port.html#a628ea93d1cdfb82cc7794c29676fc443"><param name="Name" value="~LogWriterPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port.html#a5be1aec96f32fbd1d753d9f1e9a585f9"><param name="Name" value="~Port"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_port_exception.html#a991be6a270387599812eddd5bc96b31d"><param name="Name" value="~PortException"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_serial_port.html#aca8cb76141e8dfc5e80f5d5c7f70013c"><param name="Name" value="~SerialPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_t_c_p_port.html#a92d13d1ed8a958c41fb267c807751d7a"><param name="Name" value="~TCPPort"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classflexiport_1_1_u_d_p_port.html#aa643309cb4af5f2b7930f08fd9540e35"><param name="Name" value="~UDPPort"></OBJECT>
+</UL>
+</BODY>
+</HTML>

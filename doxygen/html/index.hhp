@@ -1,0 +1,80 @@
+[OPTIONS]
+Compiled file=Flexiport-2.0.chm
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=Flexiport
+
+[WINDOWS]
+main="Flexiport","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+index.html
+flexiport_8h_source.html
+flexiport__types_8h_source.html
+logfile_8h_source.html
+logreaderport_8h_source.html
+logwriterport_8h_source.html
+port_8h_source.html
+serialport_8h_source.html
+tcpport_8h_source.html
+timeout_8h_source.html
+udpport_8h_source.html
+flexiport_8h.html
+flexiport__types_8h.html
+logfile_8h.html
+logreaderport_8h.html
+logwriterport_8h.html
+port_8h.html
+serialport_8h.html
+tcpport_8h.html
+timeout_8h.html
+udpport_8h.html
+annotated.html
+classes.html
+hierarchy.html
+functions.html
+functions_func.html
+functions_vars.html
+inherits.html
+namespaces.html
+namespaceflexiport.html
+classflexiport_1_1_port_exception.html
+classflexiport_1_1_port_exception-members.html
+classflexiport_1_1_log_file.html
+classflexiport_1_1_log_file-members.html
+classflexiport_1_1_log_reader_port.html
+classflexiport_1_1_log_reader_port-members.html
+classflexiport_1_1_log_writer_port.html
+classflexiport_1_1_log_writer_port-members.html
+classflexiport_1_1_port.html
+classflexiport_1_1_port-members.html
+classflexiport_1_1_serial_port.html
+classflexiport_1_1_serial_port-members.html
+classflexiport_1_1_t_c_p_port.html
+classflexiport_1_1_t_c_p_port-members.html
+classflexiport_1_1_timeout.html
+classflexiport_1_1_timeout-members.html
+classflexiport_1_1_u_d_p_port.html
+classflexiport_1_1_u_d_p_port-members.html
+namespacemembers.html
+namespacemembers_func.html
+graph_legend.html
+dir_799c0fac0b3bae2dbe692114227522a4.html
+dir_f7d5ea01c288b4f485e7eaaec6f3579e.html
+files.html
+dirs.html
+globals.html
+globals_defs.html
+tabs.css
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png

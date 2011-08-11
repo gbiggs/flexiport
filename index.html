@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Flexiport data communications library &mdash; Flexiport v2.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/breathe.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '2.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Flexiport v2.0.0 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Flexiport v2.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="flexiport-data-communications-library">
+<h1>Flexiport data communications library<a class="headerlink" href="#flexiport-data-communications-library" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<p>Flexiport provides a consistent interface for communicating over a range of
+data port types. Currently serial (including serial-over-USB), TCP and UDP
+ports are supported. Logging is possible, which allows communications sessions
+to be played back at a later date without the original hardware present.</p>
+<p>The SerialPort, TCPPort and UDPPort port types are cross-platform, usable on
+Linux, Mac OS X and Microsoft Windows. If this library is compiled as static on
+Windows, you must define the FLEXIPORT_STATIC preprocessor variable when
+compiling code that includes port.h, flexiport.h or timeout.h.</p>
+<p>For a full list of classes and functions, see the <a class="reference external" href="doxygen/html/index.html">API documentation</a>.</p>
+</div>
+<div class="section" id="quick-usage-guide">
+<h1>Quick usage guide<a class="headerlink" href="#quick-usage-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="header-files">
+<h2>Header files<a class="headerlink" href="#header-files" title="Permalink to this headline">¶</a></h2>
+<p>Necessary:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span class="cp">#include &lt;flexiport/flexiport.h&gt;</span>
+<span class="cp">#include &lt;flexiport/port.h&gt;</span>
+</pre></div>
+</div>
+<p>Optional if port type-specific features are required:</p>
+<ul class="simple">
+<li>SerialPort</li>
+</ul>
+<div class="highlight-cpp"><div class="highlight"><pre><span class="cp">#include &lt;flexiport/serialport.h&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>TCPPort</li>
+</ul>
+<div class="highlight-cpp"><div class="highlight"><pre><span class="cp">#include &lt;flexiport/tcpport.h&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>UDPPPort</li>
+</ul>
+<div class="highlight-cpp"><div class="highlight"><pre><span class="cp">#include &lt;flexiport/tcpport.h&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Logging ports</li>
+</ul>
+<div class="highlight-cpp"><div class="highlight"><pre><span class="cp">#include &lt;flexiport/logwriterport.h&gt;</span>
+<span class="cp">#include &lt;flexiport/logreaderport.h&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<p>If BUILD_EXAMPLES is enabled when the library is compiled and installed,
+example sources are installed under &#8220;${prefix}/share/flexiport-2/examples&#8221;.
+These can be used as a basis for creating your own software.</p>
+<div class="section" id="building">
+<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
+<p>The examples can be built by making a directory (anywhere on your system where
+you have write permissions will do), changing to that directory and executing
+CMake with the examples&#8217; source directory as an argument. For example, if you
+have installed Flexiport into /usr/local, you could do the following:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd</span> ~
+<span class="nv">$ </span>mkdir flexiport_example
+<span class="nv">$ </span><span class="nb">cd </span>flexiport_example
+<span class="nv">$ </span>ccmake /usr/local/share/flexiport/example
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-serial-example">
+<h2>Running serial_example<a class="headerlink" href="#running-serial-example" title="Permalink to this headline">¶</a></h2>
+<p>This example requires a serial loopback device. You can make one by connecting
+pins 2 and 3 of a 9-pin serial port. You must specify a path to this serial
+port with the -d option. You may additionally specify extra options for the
+flexiport object, such as a timeout. e.g.:</p>
+<div class="highlight-bash"><div class="highlight"><pre>serial_example -o <span class="nb">type</span><span class="o">=</span>serial,device<span class="o">=</span>/dev/ttyS0,baud<span class="o">=</span>57600,timeout<span class="o">=</span>2.5,debug<span class="o">=</span>2
+</pre></div>
+</div>
+<p>The example will test sending and receiving several strings to check that the
+SerialPort object is functioning correctly.</p>
+<p>This example also comes with a log file pair for use with the LogReaderPort
+port type. Using a log file pair means the hardware (in this case, the loopback
+device) does not need to be present to execute the example. You can use the
+log file pair like this:</p>
+<div class="highlight-bash"><div class="highlight"><pre>serial_example -o <span class="nb">type</span><span class="o">=</span>logreader,file<span class="o">=</span>example.log
+</pre></div>
+</div>
+<p>See the LogReaderPort object documentation for more options that can be used
+with log file pairs. See the LogWriterPort object documentation for details
+on how to make your own log file pair for testing your programs.</p>
+</div>
+<div class="section" id="running-tcp-example">
+<h2>Running tcp_example<a class="headerlink" href="#running-tcp-example" title="Permalink to this headline">¶</a></h2>
+<p>The tcp_example is simple to use. Simply execute it, and it will fork off a
+child process, then use this to test a connection between two TCPPort objects.</p>
+<p>You may specify additional options for the TCPPort objects using -o, such as
+a timeout. e.g.:</p>
+<div class="highlight-bash"><div class="highlight"><pre>tcp_example -o <span class="nv">timeout</span><span class="o">=</span>1,debug<span class="o">=</span>3
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-udp-example">
+<h2>Running udp_example<a class="headerlink" href="#running-udp-example" title="Permalink to this headline">¶</a></h2>
+<p>The udp_example is similar to the tcp_example, replacing the TCPPort object
+with a UDPPort object.</p>
+<p>You may specify additional options for the UDPPort objects using -o, such as
+a timeout. e.g.:</p>
+<div class="highlight-bash"><div class="highlight"><pre>udp_example -o <span class="nv">timeout</span><span class="o">=</span>1,debug<span class="o">=</span>3
+</pre></div>
+</div>
+</div>
+<div class="section" id="porttoport">
+<h2>PortToPort<a class="headerlink" href="#porttoport" title="Permalink to this headline">¶</a></h2>
+<p>PortToPort is a simple utility to forward data between two flexiport devices.
+It was mainly written with the idea of forwarding data from a local hardware
+serial or USB port to a TCP port, which is connected to another TCP port on a
+remote computer. If the TCP port on the remote computer is also a flexiport
+device, this allows for transparently changing between using a local hardware
+device and a remote hardware device in that program (in most cases).</p>
+<p>Options must be given for both the left and right ports. For example:</p>
+<div class="highlight-bash"><div class="highlight"><pre>porttoport -l <span class="nb">type</span><span class="o">=</span>serial,device<span class="o">=</span>/dev/ttyACM0,timeout<span class="o">=</span>0.1 -r <span class="nb">type</span><span class="o">=</span>tcp,listen,timeout<span class="o">=</span>0.1
+</pre></div>
+</div>
+<p>Another TCP port can then connect to the right port (which is waiting for one
+to do so) and communicate with the hardware device connected to the serial
+port.</p>
+<p>Execute &#8220;porttoport -h&#8221; for a list of all available options.</p>
+</div>
+<div class="section" id="note-for-windows-users">
+<h2>Note for Windows users<a class="headerlink" href="#note-for-windows-users" title="Permalink to this headline">¶</a></h2>
+<p>Because Windows lacks a readily-available implementation of getopt, command line
+options are not available for the examples on this platform. Hard-coded options
+will be used instead; change them in the source file and recompile if you need
+to change the port options.</p>
+</div>
+</div>
+<div class="section" id="license">
+<h1>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h1>
+<p>This software is developed at the National Institute of Advanced Industrial
+Science and Technology. Approval number H20PRO-881. This software is licensed
+under the Lesser General Public License. See COPYING.LESSER.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Flexiport data communications library</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#quick-usage-guide">Quick usage guide</a><ul>
+<li><a class="reference internal" href="#header-files">Header files</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#building">Building</a></li>
+<li><a class="reference internal" href="#running-serial-example">Running serial_example</a></li>
+<li><a class="reference internal" href="#running-tcp-example">Running tcp_example</a></li>
+<li><a class="reference internal" href="#running-udp-example">Running udp_example</a></li>
+<li><a class="reference internal" href="#porttoport">PortToPort</a></li>
+<li><a class="reference internal" href="#note-for-windows-users">Note for Windows users</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#license">License</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Flexiport v2.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Geoffrey Biggs.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
