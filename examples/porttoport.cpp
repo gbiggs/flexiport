@@ -67,7 +67,7 @@ int main (int argc, char **argv)
         {
             case 'b':
                 is.str (optarg);
-                if (!(is >> bufferSize) || is.get (c) || bufferSize < 0)
+                if (!(is >> bufferSize) || is.get (c))
                 {
                     cerr << "Bad buffer size: " << optarg << endl;
                     Usage (argv[0]);
@@ -86,7 +86,7 @@ int main (int argc, char **argv)
                 break;
             case 's':
                 is.str (optarg);
-                if (!(is >> sleepTime) || is.get (c) || sleepTime < 0)
+                if (!(is >> sleepTime) || is.get (c))
                 {
                     cerr << "Bad sleep time: " << optarg << endl;
                     Usage (argv[0]);
