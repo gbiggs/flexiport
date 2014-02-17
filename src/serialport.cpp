@@ -895,7 +895,7 @@ bool SerialPort::ProcessOption (const std::string &option, const std::string &va
     else if (option == "databits")
     {
         istringstream is (value);
-        if (!(is >> _dataBits) || is.get (c) || (_dataBits < 5 && _dataBits > 8))
+        if (!(is >> _dataBits) || is.get (c) || _dataBits < 5 || _dataBits > 8)
             throw PortException ("Bad data bits value: " + value);
         return true;
     }
