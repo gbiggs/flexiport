@@ -39,6 +39,7 @@
     #endif
 #else
     #include <stdint.h>
+    #include <sys/types.h>
 #endif
 
 #endif // __FLEXIPORT_TYPES_H
