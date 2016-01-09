@@ -1,6 +1,6 @@
 /* Flexiport
  *
- * Bluetooth port loopback example.
+ * Bluetooth rfcomm port loopback example.
  *
  * Copyright 2016 Rich Mattes richmattes@gmail.com
  * Copyright 2008-2011 Geoffrey Biggs geoffrey.biggs@aist.go.jp
@@ -83,7 +83,7 @@ int main (int argc, char **argv)
         cout << "Creating port" << endl;
         flexiport::Port *port;
 
-        port = flexiport::CreatePort ("type=bt," + portOptions);
+        port = flexiport::CreatePort ("type=rfcomm," + portOptions);
 
         cout << "Opening port." << endl;
         port->Open ();

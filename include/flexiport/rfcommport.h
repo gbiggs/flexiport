@@ -1,6 +1,6 @@
 /* Flexiport
  *
- * Header file for the Bluetooth port class.
+ * Header file for the Bluetooth rfcomm port class.
  *
  * Copyright 2016 Rich Mattes richmattes@gmail.com
  * Copyright 2008-2011 Geoffrey Biggs geoffrey.biggs@aist.go.jp
@@ -27,8 +27,8 @@
  * <http://www.gnu.org/licenses/>.
  */
 
-#ifndef __BTPORT_H
-#define __BTPORT_H
+#ifndef __RFCOMMPORT_H
+#define __RFCOMMPORT_H
 
 #include <flexiport/port.h>
 
@@ -42,7 +42,7 @@
 namespace flexiport
 {
 
-/** @brief Bluetooth implementation of the @ref Port class.
+/** @brief Bluetooth rfcomm implementation of the @ref Port class.
 
 Connects to Bluetooth devices using the RFCOMM protocol.
 See the @ref Port class documentation for how to use the common API.
@@ -59,11 +59,11 @@ See the @ref Port class documentation for how to use the common API.
      network applications can connect and send data, which will become
      available as normal.
    - Default: off */
-class FLEXIPORT_EXPORT BTPort : public Port
+class FLEXIPORT_EXPORT RFCOMMPort : public Port
 {
     public:
-        BTPort (std::map<std::string, std::string> options);
-        ~BTPort ();
+        RFCOMMPort (std::map<std::string, std::string> options);
+        ~RFCOMMPort ();
 
         /** @brief Open the port.
 
@@ -124,5 +124,5 @@ class FLEXIPORT_EXPORT BTPort : public Port
 
 /** @} */
 
-#endif // __BTPORT_H
+#endif // __RFCOMMPORT_H
 

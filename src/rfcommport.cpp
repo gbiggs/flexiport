@@ -1,6 +1,6 @@
 /* Flexiport
  *
- * Bluetooth port class implementation.
+ * Bluetooth rfcomm port class implementation.
  *
  * Copyright 2016 Rich Mattes richmattes@gmail.com
  * Copyright 2008-2011 Geoffrey Biggs geoffrey.biggs@aist.go.jp
@@ -28,7 +28,7 @@
  */
 
 #include <flexiport/flexiport.h>
-#include <flexiport/btport.h>
+#include <flexiport/rfcommport.h>
 #include <flexiport/config.h>
 
 #include <sys/types.h>
@@ -92,7 +92,7 @@ inline string StrError (int errNo)
 // Constructor/destructor
 ///////////////////////////////////////////////////////////////////////////////
 
-BTPort::BTPort (map<string, string> options)
+RFCOMMPort::RFCOMMPort (map<string, string> options)
 #if defined (WIN32)
     : Port (), _sock (INVALID_SOCKET), _listenSock (INVALID_SOCKET),
 #else
@@ -100,7 +100,7 @@ BTPort::BTPort (map<string, string> options)
 #endif
     _devid ("00:00:00:00:00:00"), _port (1), _isListener (false), _open (false)
 {
-    _type = "bt";
+    _type = "rfcomm";
     ProcessOptions (options);
 
 #if defined (WIN32)
@@ -119,7 +119,7 @@ BTPort::BTPort (map<string, string> options)
         Open ();
 }
 
-BTPort::~BTPort ()
+RFCOMMPort::~RFCOMMPort ()
 {
     Close ();
 
@@ -138,27 +138,27 @@ BTPort::~BTPort ()
 // Port management
 ///////////////////////////////////////////////////////////////////////////////
 
-void BTPort::Open ()
+void RFCOMMPort::Open ()
 {
     if (_open)
         throw PortException ("Attempt to open already-opened port.");
 
     // Connect to the given address
      if (_debug >= 1)
-        cerr << "BTPort::" << __func__ << "() Connecting" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Connecting" << endl;
 
     Connect ();
     
     SetSocketBlockingFlag ();
     _open = true;
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Port is open" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Port is open" << endl;
 }
 
-void BTPort::Close ()
+void RFCOMMPort::Close ()
 {
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Closing port" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Closing port" << endl;
 
     _open = false;
 #if defined (WIN32)
@@ -186,21 +186,21 @@ void BTPort::Close ()
 #endif
 
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Port closed" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Port closed" << endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 // Read functions
 ///////////////////////////////////////////////////////////////////////////////
 
-ssize_t BTPort::Read (void * const buffer, size_t count)
+ssize_t RFCOMMPort::Read (void * const buffer, size_t count)
 {
     ssize_t receivedBytes = 0;
 
     CheckPort (true);
 
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Going to read " << count << " bytes" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Going to read " << count << " bytes" << endl;
 
     if (_timeout._sec == -1)
     {
@@ -236,7 +236,7 @@ ssize_t BTPort::Read (void * const buffer, size_t count)
     }
 
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Read " << receivedBytes << " bytes" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Read " << receivedBytes << " bytes" << endl;
 
     if (receivedBytes < 0)
     {
@@ -246,7 +246,7 @@ ssize_t BTPort::Read (void * const buffer, size_t count)
         {
             // General error
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -255,12 +255,12 @@ ssize_t BTPort::Read (void * const buffer, size_t count)
     {
         // Peer disconnected cleanly, do the same at this end
         if (_debug >= 1)
-            cerr << "BTPort::" << __func__ << "() Peer disconnected cleanly." << endl;
+            cerr << "RFCOMMPort::" << __func__ << "() Peer disconnected cleanly." << endl;
         Close ();
         if (_alwaysOpen)
         {
             if (_debug >= 1)
-                cerr << "BTPort::" << __func__ << "() Trying to reconnect." << endl;
+                cerr << "RFCOMMPort::" << __func__ << "() Trying to reconnect." << endl;
             Open ();
         }
         return 0;
@@ -269,7 +269,7 @@ ssize_t BTPort::Read (void * const buffer, size_t count)
     return receivedBytes;
 }
 
-ssize_t BTPort::ReadFull (void * const buffer, size_t count)
+ssize_t RFCOMMPort::ReadFull (void * const buffer, size_t count)
 {
     ssize_t numReceived = 0;
     size_t receivedBytes = 0;
@@ -278,7 +278,7 @@ ssize_t BTPort::ReadFull (void * const buffer, size_t count)
 
     if (_debug >= 2)
     {
-        cerr << "BTPort::" << __func__ << "() Going to read until have " <<
+        cerr << "RFCOMMPort::" << __func__ << "() Going to read until have " <<
             count << " bytes" << endl;
     }
 
@@ -292,20 +292,20 @@ ssize_t BTPort::ReadFull (void * const buffer, size_t count)
                 count - receivedBytes, MSG_WAITALL);
 #endif
         if (_debug >= 2)
-            cerr << "BTPort::" << __func__ << "() Received " << numReceived << " bytes" << endl;
+            cerr << "RFCOMMPort::" << __func__ << "() Received " << numReceived << " bytes" << endl;
         if (numReceived < 0)
         {
             if (ErrNo () == ERRNO_EAGAIN)
             {
                 // Timed out (which probably shouldn't happen)
-                throw PortException (string ("BTPort::") + __func__ +
+                throw PortException (string ("RFCOMMPort::") + __func__ +
                         string ("() recv() timed out, probably shouldn't happen."));
             }
             else
             {
                 // General error
                 stringstream ss;
-                ss << "BTPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
+                ss << "RFCOMMPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
                     StrError (ErrNo ());
                 throw PortException (ss.str ());
             }
@@ -314,18 +314,18 @@ ssize_t BTPort::ReadFull (void * const buffer, size_t count)
         {
             // Peer disconnected cleanly, do the same at this end
             if (_debug >= 1)
-                cerr << "BTPort::" << __func__ << "() Peer disconnected cleanly." << endl;
+                cerr << "RFCOMMPort::" << __func__ << "() Peer disconnected cleanly." << endl;
             Close ();
             if (_alwaysOpen)
             {
                 if (_debug >= 1)
-                    cerr << "BTPort::" << __func__ << "() Trying to reconnect." << endl;
+                    cerr << "RFCOMMPort::" << __func__ << "() Trying to reconnect." << endl;
                 Open ();
                 // Can go around again after this - if it doesn't open successfully Open() will throw
             }
             else
             {
-                throw PortException (string ("BTPort::") + __func__ +
+                throw PortException (string ("RFCOMMPort::") + __func__ +
                         string ("() Port closed during read operation."));
             }
         }
@@ -336,7 +336,7 @@ ssize_t BTPort::ReadFull (void * const buffer, size_t count)
     return receivedBytes;
 }
 
-ssize_t BTPort::BytesAvailable ()
+ssize_t RFCOMMPort::BytesAvailable ()
 {
     // TODO:
     // MSG_PEEK is apparently bad on Windows so we should drain what we can into a local buffer
@@ -354,20 +354,20 @@ ssize_t BTPort::BytesAvailable ()
 #endif
     {
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() ioctl() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() ioctl() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
 
     if (_debug >= 2)
     {
-        cerr << "BTPort::" << __func__ << "() Found " << bytesAvailable <<
+        cerr << "RFCOMMPort::" << __func__ << "() Found " << bytesAvailable <<
             " bytes available" << endl;
     }
     return bytesAvailable;
 }
 
-ssize_t BTPort::BytesAvailableWait ()
+ssize_t RFCOMMPort::BytesAvailableWait ()
 {
     CheckPort (true);
 
@@ -375,7 +375,7 @@ ssize_t BTPort::BytesAvailableWait ()
     {
         if (_debug >= 2)
         {
-            cerr << "BTPort::" << __func__ <<
+            cerr << "RFCOMMPort::" << __func__ <<
                 " Timed out waiting for data to check bytes available" << endl;
         }
         if (IsBlocking ())
@@ -397,14 +397,14 @@ ssize_t BTPort::BytesAvailableWait ()
 #endif
     {
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() ioctl() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() ioctl() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
 
     if (_debug >= 2)
     {
-        cerr << "BTPort::" << __func__ << "() Found " << bytesAvailable <<
+        cerr << "RFCOMMPort::" << __func__ << "() Found " << bytesAvailable <<
             " bytes available after waiting" << endl;
     }
     return bytesAvailable;
@@ -414,20 +414,20 @@ ssize_t BTPort::BytesAvailableWait ()
 // Write functions
 ///////////////////////////////////////////////////////////////////////////////
 
-ssize_t BTPort::Write (const void * const buffer, size_t count)
+ssize_t RFCOMMPort::Write (const void * const buffer, size_t count)
 {
     ssize_t numSent = 0;
 
     CheckPort (false);
 
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Writing " << count << " bytes" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Writing " << count << " bytes" << endl;
     if (_timeout._sec != -1)
     {
         if (WaitForWritableOrTimeout () == TIMED_OUT)
         {
             if (_debug >= 2)
-                cerr << "BTPort::" << __func__ << "() Timed out waiting to send" << endl;
+                cerr << "RFCOMMPort::" << __func__ << "() Timed out waiting to send" << endl;
             return -1;
         }
     }
@@ -440,26 +440,26 @@ ssize_t BTPort::Write (const void * const buffer, size_t count)
         if (ErrNo () == ERRNO_EAGAIN)
         {
             if (_debug >= 2)
-                cerr << "BTPort::" << __func__ << "() Timed out while in send()" << endl;
+                cerr << "RFCOMMPort::" << __func__ << "() Timed out while in send()" << endl;
             return -1; // Timed out
         }
         else
         {
             // General error
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() send() error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() send() error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
     }
 
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Wrote " << numSent << " bytes" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Wrote " << numSent << " bytes" << endl;
 
     return numSent;
 }
 
-void BTPort::Flush ()
+void RFCOMMPort::Flush ()
 {
     int numRead = 0;
     char dump[128];
@@ -481,7 +481,7 @@ void BTPort::Flush ()
         if (numRead < 0 && ErrNo () != ERRNO_EAGAIN)
         {
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -490,18 +490,18 @@ void BTPort::Flush ()
     // We can't do anything about the write buffers.
 }
 
-void BTPort::Drain ()
+void RFCOMMPort::Drain ()
 {
     // Since we can't force the write buffer to send, we can't do anything here.
     if (_debug >= 1)
-        cerr << "BTPort::" << __func__ << "() Can't drain output buffer of BT port." << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Can't drain output buffer of BT port." << endl;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 // Other public API functions
 ///////////////////////////////////////////////////////////////////////////////
 
-std::string BTPort::GetStatus () const
+std::string RFCOMMPort::GetStatus () const
 {
     stringstream status;
 
@@ -514,18 +514,18 @@ std::string BTPort::GetStatus () const
     return Port::GetStatus () + status.str ();
 }
 
-void BTPort::SetTimeout (Timeout timeout)
+void RFCOMMPort::SetTimeout (Timeout timeout)
 {
     _timeout = timeout;
     SetSocketBlockingFlag ();
 }
 
-void BTPort::SetCanRead (bool canRead)
+void RFCOMMPort::SetCanRead (bool canRead)
 {
     _canRead = canRead;
 }
 
-void BTPort::SetCanWrite (bool canWrite)
+void RFCOMMPort::SetCanWrite (bool canWrite)
 {
     _canWrite = canWrite;
 }
@@ -534,7 +534,7 @@ void BTPort::SetCanWrite (bool canWrite)
 // Internal functions
 ///////////////////////////////////////////////////////////////////////////////
 
-bool BTPort::ProcessOption (const std::string &option, const std::string &value)
+bool RFCOMMPort::ProcessOption (const std::string &option, const std::string &value)
 {
     char c = '\0';
 
@@ -564,7 +564,7 @@ bool BTPort::ProcessOption (const std::string &option, const std::string &value)
 }
 
 // Connect to a remote server: used when not in listen mode
-void BTPort::Connect ()
+void RFCOMMPort::Connect ()
 {
     Close ();    // To make sure
 
@@ -581,13 +581,13 @@ void BTPort::Connect ()
 #endif
     {
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() socket() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() socket() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
 
     if (_debug >= 1)
-        cerr << "BTPort::" << __func__ << "() Connecting to " << _devid << ", Port " << _port << "." << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Connecting to " << _devid << ", Port " << _port << "." << endl;
     if (connect (_sock, (struct sockaddr *)&addr, sizeof(addr)) < 0)
     {
         Close ();
@@ -598,7 +598,7 @@ void BTPort::Connect ()
 
 }
 
-void BTPort::WaitForConnection ()
+void RFCOMMPort::WaitForConnection ()
 {
     Close ();
 
@@ -622,7 +622,7 @@ void BTPort::WaitForConnection ()
 #endif
     {
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() socket() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() socket() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
@@ -631,7 +631,7 @@ void BTPort::WaitForConnection ()
     {
         Close ();
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() bind() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() bind() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
@@ -639,7 +639,7 @@ void BTPort::WaitForConnection ()
     listen (_listenSock, 1);
 
     if (_debug >= 1)
-        cerr << "BTPort::" << __func__ << "() Waiting for a connection." << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Waiting for a connection." << endl;
     _sock = accept (_listenSock, NULL, NULL);
 #if defined (WIN32)
     if (_sock == INVALID_SOCKET)
@@ -649,7 +649,7 @@ void BTPort::WaitForConnection ()
     {
         Close ();
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() accept() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() accept() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
@@ -662,7 +662,7 @@ void BTPort::WaitForConnection ()
 #endif
     {
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() close(_listenSock) error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() close(_listenSock) error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
@@ -675,16 +675,16 @@ void BTPort::WaitForConnection ()
 }
 
 // Checks if data is available, waiting for the timeout if none is available immediatly
-BTPort::WaitStatus BTPort::WaitForDataOrTimeout ()
+RFCOMMPort::WaitStatus RFCOMMPort::WaitForDataOrTimeout ()
 {
     if (IsDataAvailable ())
     {
         if (_debug >= 2)
-            cerr << "BTPort::" << __func__ << "() Found data available immediately." << endl;
+            cerr << "RFCOMMPort::" << __func__ << "() Found data available immediately." << endl;
         return DATA_AVAILABLE;
     }
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() No data available immediately, will wait." << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() No data available immediately, will wait." << endl;
 
     fd_set fdSet;
     struct timeval tv, *tvPtr = NULL;
@@ -701,27 +701,27 @@ BTPort::WaitStatus BTPort::WaitForDataOrTimeout ()
     if (result < 0)
     {
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() select() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() select() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
     else if (result == 0)
     {
         if (_debug >= 2)
-            cerr << "BTPort::" << __func__ << "() Timed out." << endl;
+            cerr << "RFCOMMPort::" << __func__ << "() Timed out." << endl;
         // Time out
         return TIMED_OUT;
     }
     if (_debug >= 2)
-        cerr << "BTPort::" << __func__ << "() Found data waiting." << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Found data waiting." << endl;
     return DATA_AVAILABLE;
 }
 
 // Checks if data is available right now
-bool BTPort::IsDataAvailable ()
+bool RFCOMMPort::IsDataAvailable ()
 {
     if (_debug >= 3)
-        cerr << "BTPort::" << __func__ << "() Checking if data is available immediately." << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Checking if data is available immediately." << endl;
 
     // First peek at the buffer to see if there is anything waiting. For an infinite timeout,
     // this will block indefinitely until we get data.
@@ -735,7 +735,7 @@ bool BTPort::IsDataAvailable ()
     if (receivedBytes > 0)
     {
         if (_debug >= 3)
-            cerr << "BTPort::" << __func__ << "() Found data waiting." << endl;
+            cerr << "RFCOMMPort::" << __func__ << "() Found data waiting." << endl;
         return true;
     }
     else if (receivedBytes < 0)
@@ -744,7 +744,7 @@ bool BTPort::IsDataAvailable ()
         {
             // General error
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() recv() error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -754,23 +754,23 @@ bool BTPort::IsDataAvailable ()
     {
         // Peer disconnected cleanly, do the same at this end
         if (_debug >= 1)
-            cerr << "BTPort::" << __func__ << "() Peer disconnected cleanly." << endl;
+            cerr << "RFCOMMPort::" << __func__ << "() Peer disconnected cleanly." << endl;
         Close ();
         if (_alwaysOpen)
         {
             if (_debug >= 1)
-                cerr << "BTPort::" << __func__ << "() Trying to reconnect." << endl;
+                cerr << "RFCOMMPort::" << __func__ << "() Trying to reconnect." << endl;
             Open ();
         }
         // Fall through to return no data
     }
     if (_debug >= 3)
-        cerr << "BTPort::" << __func__ << "() Found no data waiting." << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Found no data waiting." << endl;
     return false;
 }
 
 // Checks it he port can be written to, waiting for the timeout if it can't be written immediatly
-BTPort::WaitStatus BTPort::WaitForWritableOrTimeout ()
+RFCOMMPort::WaitStatus RFCOMMPort::WaitForWritableOrTimeout ()
 {
     fd_set fdSet;
     struct timeval tv, *tvPtr = NULL;
@@ -787,24 +787,24 @@ BTPort::WaitStatus BTPort::WaitForWritableOrTimeout ()
     if (result < 0)
     {
         stringstream ss;
-        ss << "BTPort::" << __func__ << "() select() error: (" << ErrNo () << ") " <<
+        ss << "RFCOMMPort::" << __func__ << "() select() error: (" << ErrNo () << ") " <<
             StrError (ErrNo ());
         throw PortException (ss.str ());
     }
     else if (result == 0)
     {
         if (_debug >= 3)
-            cerr << "BTPort::" << __func__ << "() Timed out" << endl;
+            cerr << "RFCOMMPort::" << __func__ << "() Timed out" << endl;
         // Time out
         return TIMED_OUT;
     }
     if (_debug >= 3)
-        cerr << "BTPort::" << __func__ << "() Found space to write" << endl;
+        cerr << "RFCOMMPort::" << __func__ << "() Found space to write" << endl;
     return CAN_WRITE;
 }
 
 // Check if the port is open and if permissions are set correctly for the desired operation
-void BTPort::CheckPort (bool read)
+void RFCOMMPort::CheckPort (bool read)
 {
     if (!_open)
         throw PortException ("Port is not open.");
@@ -816,7 +816,7 @@ void BTPort::CheckPort (bool read)
         throw PortException ("Cannot write to read-only port.");
 }
 
-void BTPort::SetSocketBlockingFlag ()
+void RFCOMMPort::SetSocketBlockingFlag ()
 {
     if (_timeout._sec == -1)
     {
@@ -826,7 +826,7 @@ void BTPort::SetSocketBlockingFlag ()
         if (ioctlsocket (_sock, FIONBIO, &setting) == SOCKET_ERROR)
         {
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() ioctlsocket error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() ioctlsocket error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -835,7 +835,7 @@ void BTPort::SetSocketBlockingFlag ()
         if ((flags = fcntl (_sock, F_GETFL)) < 0)
         {
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() fcntl(F_GETFL) error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() fcntl(F_GETFL) error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -843,7 +843,7 @@ void BTPort::SetSocketBlockingFlag ()
         if (fcntl (_sock, F_SETFL, flags) < 0)
         {
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() fcntl(F_SETFL) error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() fcntl(F_SETFL) error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -857,7 +857,7 @@ void BTPort::SetSocketBlockingFlag ()
         if (ioctlsocket (_sock, FIONBIO, &setting) == SOCKET_ERROR)
         {
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() ioctlsocket error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() ioctlsocket error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -866,7 +866,7 @@ void BTPort::SetSocketBlockingFlag ()
         if ((flags = fcntl (_sock, F_GETFL)) < 0)
         {
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() fcntl(F_GETFL) error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() fcntl(F_GETFL) error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }
@@ -874,7 +874,7 @@ void BTPort::SetSocketBlockingFlag ()
         if (fcntl (_sock, F_SETFL, flags) < 0)
         {
             stringstream ss;
-            ss << "BTPort::" << __func__ << "() fcntl(F_SETFL) error: (" << ErrNo () << ") " <<
+            ss << "RFCOMMPort::" << __func__ << "() fcntl(F_SETFL) error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
             throw PortException (ss.str ());
         }

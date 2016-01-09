@@ -26,10 +26,10 @@ install(TARGETS ${PROJECT_NAME_LOWER}_udp_example
     COMPONENT examples)
 
 # BT port example
-add_executable(${PROJECT_NAME_LOWER}_bt_example bt_example.cpp)
-target_link_libraries(${PROJECT_NAME_LOWER}_bt_example
+add_executable(${PROJECT_NAME_LOWER}_rfcomm_example rfcomm_example.cpp)
+target_link_libraries(${PROJECT_NAME_LOWER}_rfcomm_example
     ${PROJECT_NAME_LOWER})
-install(TARGETS ${PROJECT_NAME_LOWER}_bt_example
+install(TARGETS ${PROJECT_NAME_LOWER}_rfcomm_example
     DESTINATION ${BIN_INSTALL_DIR}
     COMPONENT examples)
 
