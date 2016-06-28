@@ -803,6 +803,7 @@ bool LogFile::CheckWrite (const void * const data, const size_t count, size_t * 
             stringstream ss;
             ss << "LogFile::" << __func__ << "() fseek(_readFile) error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
+            delete [] fileData;
             throw PortException (ss.str ());
         }
         if (fseek (_writeFile, -1, SEEK_END) < 0)
@@ -810,6 +811,7 @@ bool LogFile::CheckWrite (const void * const data, const size_t count, size_t * 
             stringstream ss;
             ss << "LogFile::" << __func__ << "() fseek(_writeFile) error: (" << ErrNo () << ") " <<
                 StrError (ErrNo ());
+            delete [] fileData;
             throw PortException (ss.str ());
         }
     }
