@@ -45,6 +45,7 @@ namespace flexiport
 /** @brief Bluetooth rfcomm implementation of the @ref Port class.
 
 Connects to Bluetooth devices using the RFCOMM protocol.
+Uses the bluez library for bluetooth support.
 See the @ref Port class documentation for how to use the common API.
 
 @par Options

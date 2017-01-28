@@ -21,8 +21,13 @@ endif(FLEXIPORT_INCLUDE_LOGGING)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 include_directories(${PROJECT_BINARY_DIR}/include)
+if(FLEXIPORT_INCLUDE_BT)
+    include_directories(${BLUETOOTH_INCLUDE_DIRS})
+endif(FLEXIPORT_INCLUDE_BT)
 add_library(${PROJECT_NAME_LOWER} ${LIB_TYPE} ${srcs})
-target_link_libraries(${PROJECT_NAME_LOWER} bluetooth)
+if(FLEXIPORT_INCLUDE_BT)
+    target_link_libraries(${PROJECT_NAME_LOWER} ${BLUETOOTH_LIBRARIES})
+endif(FLEXIPORT_INCLUDE_BT)
 set_target_properties(${PROJECT_NAME_LOWER} PROPERTIES
     VERSION ${PROJECT_VERSION}
     SOVERSION ${PROJECT_VERSION_MAJOR})

@@ -41,6 +41,21 @@ include(CheckFunctionExists)
 CHECK_FUNCTION_EXISTS(getaddrinfo FLEXIPORT_HAVE_GETADDRINFO)
 set(CMAKE_REQUIRED_LIBRARIES)
 
+# Check for bluetooth (bluez) support using pkg-config
+if(FLEXIPORT_INCLUDE_BT)
+    include(FindPkgConfig)
+    if(PKG_CONFIG_FOUND)
+        pkg_check_modules(BLUETOOTH bluez)
+        if(NOT BLUETOOTH_FOUND)
+            message(WARNING "bluez not found, bluetooth support disabled")
+            set(FLEXIPORT_INCLUDE_BT OFF)
+        endif(NOT BLUETOOTH_FOUND)
+    else(PKG_CONFIG_FOUND)
+        message(WARNING "Could not find pkg-config, bluetooth support disabled")
+        set(FLEXIPORT_INCLUDE_BT OFF)
+    endif(PKG_CONFIG_FOUND)
+endif(FLEXIPORT_INCLUDE_BT)
+
 # Set up installation directories
 set(BIN_INSTALL_DIR "bin")
 set(LIB_INSTALL_DIR "lib")
