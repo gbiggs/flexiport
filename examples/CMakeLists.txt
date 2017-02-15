@@ -25,6 +25,14 @@ install(TARGETS ${PROJECT_NAME_LOWER}_udp_example
     DESTINATION ${BIN_INSTALL_DIR}
     COMPONENT examples)
 
+# BT port example
+add_executable(${PROJECT_NAME_LOWER}_rfcomm_example rfcomm_example.cpp)
+target_link_libraries(${PROJECT_NAME_LOWER}_rfcomm_example
+    ${PROJECT_NAME_LOWER})
+install(TARGETS ${PROJECT_NAME_LOWER}_rfcomm_example
+    DESTINATION ${BIN_INSTALL_DIR}
+    COMPONENT examples)
+
 # PortToPort utility
 if(NOT WIN32)
     add_executable(${PROJECT_NAME_LOWER}_porttoport porttoport.cpp)
